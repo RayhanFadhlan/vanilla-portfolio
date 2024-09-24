@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Mono:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  background-color: #111;
+  color: white;
+  font-family: "Noto Sans Mono", monospace;
+  font-weight: 400;
+}
+
+body * {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.hero-secondary {
+  color: #888888;
+}
+.hero {
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.rayhanfa-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* font-family: "IBM Plex Mono", monospace; */
+  font-weight: 800;
+  font-size: 5.5vw;
+  /* letter-spacing: 8px; */
+  margin: 0;
+  transition: color 0.5s ease;
+}
+
+.text-hover-color:hover {
+  transition: color 0.5s ease;
+  color: #ff6347;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  min-height: 80vh;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  min-height: 80vh;
+}
+
+.middle-div {
+  width: 80%;
+}
+.hero-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10vw;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.big-p {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.orange-text {
+  color: #ff6347;
+}
+
+.icon-svg {
+  color: #888888;
+}
+
+.icon-svg:hover {
+  transition: color 0.5s ease;
+  color: #ff6347;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.experience-full-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.experience-full-content:hover {
+  background-color: #ff6347;
+  color: #111 !important;
+  transition: background-color 0.5s ease;
+}
+
+.experience-middle-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.experience-middle-content h2 {
+  flex: 0 0 33%;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.project-full-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.project-full-content:hover {
+  background-color: #ff6347;
+  color: #111;
+  transition: background-color 0.5s ease;
+}
+.project-middle-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.project-main {
+  display: flex;
+  flex-direction: column;
+}
+.project-main > h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-main > p {
+  font-size: 20px;
+  margin-top: 2px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo a {
+  color: #ff6347;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6347;
+}
+.footer {
+   
+    color: #888888;
+    padding: 1rem 0; 
+    text-align: center; 
+    font-size: 20px;
+   
+}
+
+
+
+@media (max-width: 1024px) {
+  .experience-middle-content h2 {
+    font-size: 24px;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .big-p {
+    font-size: 40px;
+  }
+  .nav-links {
+    display: none;
+  }
+}
